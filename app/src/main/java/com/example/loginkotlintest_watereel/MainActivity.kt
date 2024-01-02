@@ -18,9 +18,9 @@ class MainActivity : AppCompatActivity() {
             // 아이디입력값, 비번 입력값 을 각각의 변수에 저장
             // 두개의 변수에 들어있는 값 검사. (맞는 아이디/비번)
             // 맞을때 => 틀릴때 분기처리
-
+            val name = "watereel"
             if (inputId == "admin@test.com" && inputPw == "qwer"){
-                Toast.makeText(this,"관리자입니다.",Toast.LENGTH_SHORT).show()
+                Toast.makeText(this,"${name} 관리자입니다.",Toast.LENGTH_SHORT).show()
             }
             else {
                 Toast.makeText(this, "로그인 실패", Toast.LENGTH_SHORT).show()
